@@ -1,0 +1,96 @@
+<title>Penta Vida</title>
+
+
+
+
+<!-- navbar -->
+<mat-toolbar class="tool">
+    <mat-toolbar-row class="cont">
+
+
+        <div class="container">
+            <span>
+                <img src="http://portal.aach.cl/Contenido/Galeria/Cias/120.jpg" width="130" />
+            </span>
+            <!-- boton menu -->
+            <button id="menu" mat-icon-button (click)="snav.toggle()">
+                <span matTooltip="Menú">
+                    <i class="material-icons">menu</i>
+                </span>
+            </button>
+        </div>
+
+        <span class="example-spacer">
+            <form class="form-inline xs-2 my-2 my-lg-15" class="float-right">
+                <!-- cambiar contraseña -->
+                <button mat-button (click)="openDialogPass()" mat-icon-button id="key">
+                    <span matTooltip="Cambiar Contraseña "  id="tip">
+                        <i class="material-icons">vpn_key</i>
+                    </span>
+                </button>
+
+                <!-- boton salir -->
+                <button mat-button (click)="openDialogLogout()" mat-icon-button  id="salir">
+                    <span matTooltip="Salir" id="tip" >
+                        <i class="material-icons">power_settings_new</i>
+                    </span>
+                </button>
+            </form>
+        </span>
+
+
+    </mat-toolbar-row>
+</mat-toolbar>
+<!--  -->
+
+<!-- sidenav Container -->
+<mat-sidenav-container class="sidenav-container">
+
+    <mat-sidenav class="side" #snav [mode]="'side'" [opened]="'true'">
+        <mat-nav-list class="navlist">
+
+            <div class="text-center">
+                <img id="imagen" class="center" src="http://emser.es/wp-content/uploads/2016/08/usuario-sin-foto.png" alt="" width="120"
+                    height="120">
+            </div>
+            <br>
+            <div class="text-center">
+
+
+
+
+                <button mat-button (click)="openDialog()" mat-raised-button color="warn" id="mis-datos">
+                    <i class="material-icons">contacts</i>Mis Datos</button>
+
+
+            </div>
+            <br>
+            <hr>
+            <br>
+            <h6 class="text-center" style="color:white">Menú</h6>
+
+            <a id="icono" class="item" mat-list-item routerLink="main" (click)="snav.toggle(close)">
+                <i class="material-icons">home</i> Home</a>
+
+            <a id="icono" class="item" mat-list-item routerLink="solution" (click)="snav.toggle(close)">
+                <i class="material-icons">format_list_bulleted</i>Soluciones</a>
+
+            <a id="icono" class="item" mat-list-item routerLink="statistic" (click)="snav.toggle(close)">
+                <i class="material-icons">insert_chart</i>Mis Estadísticas</a>
+
+
+            <a id="icono" class="item" mat-list-item routerLink="executives" (click)="snav.toggle(close)">
+                <i class="material-icons">supervisor_account</i>Ejecutivos</a>
+
+
+
+
+
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

@@ -1,0 +1,23 @@
+#btn:hover{
+  
+    background-color: #fe852f;
+  }
+  .btn{
+    color: white;
+    background-color: #fe852f;
+    width: 95px;
+    height: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    vertical-align: middle;
+    margin: 10px;
+   
+  
+  }
+
+  h6{
+margin-top: 1px;
+border-bottom-color: #fe852f;
+  }
+  .cont{
+    border-radius: 5px;
+  }

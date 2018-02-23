@@ -1,0 +1,68 @@
+<title>Login</title>
+
+<div class="container">
+  <div class="card card-container">
+
+
+    <img id="profile-img" class="profile-img-card" src="http://portal.aach.cl/Contenido/Galeria/Cias/120.jpg" />
+    <h3 id="profile-name" class="profile-name-card"> Acceso Ejecutivos</h3>
+    <hr>
+
+
+    <form class="form-signin">
+
+      <div class="form-group">
+        <!--email-->
+        <div class="input-group">
+
+          <div class="input-group-addon">
+            <i class="material-icons">perm_identity</i>
+          </div>
+   
+          <input type="email" id="inputEmail" name="login" class="form-control form-control-sm" placeholder="Ej. portalpartner@pentavida.cl"
+            required autofocus>
+          <div class="invalid-feedback">
+            Ingrese email valido
+          </div>
+
+        </div>
+      </div>
+
+      <!--password-->
+      <div class="form-group">
+
+
+        <div class="input-group">
+
+          <div class="input-group-addon">
+            <i class="material-icons">vpn_key</i>
+          </div>
+
+
+          <input type="password" id="inputPassword" class="form-control form-control-sm" placeholder="Contraseña" required>
+          <div class="invalid-feedback">
+            Ingrese email valido
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="remember" class="checkbox">
+
+      </div>
+
+      <a [routerLink]="['login']">
+
+        <button type="button" class="btn btn-warning">Iniciar Sesión</button>
+      </a>
+
+    </form>
+    <!-- /form -->
+    <a [routerLink]="['lostpassword']" class="forgot-password">
+      Obtén o recupera tu contraseña
+    </a>
+  </div>
+  <!-- /card-container -->
+</div>
+<!-- /container -->

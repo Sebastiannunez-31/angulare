@@ -1,0 +1,99 @@
+<div id="blanco" class="content-container">
+<br>
+<h3 id="titulo"> Mis Estadisticas</h3>
+<p id="leyenda">Estadísticas de las soluciones  </p>
+<br>
+
+
+<div>
+<mat-expansion-panel id="expa" [expanded]="true">
+
+
+    <!-- header expansion panel -->
+    <mat-expansion-panel-header id="head-expa">
+        <i class="material-icons">find_replace</i>
+        <b>Opciones de busqueda</b>
+    </mat-expansion-panel-header>
+  
+
+    <!-- fecha desde -->
+    <form id="formSta" class="row">
+        <div id="fcha-desde" class=" col-lg-3 " id="fech-desde">
+            <mat-hint align="center">
+                <strong>Fecha Inicio</strong>
+            </mat-hint>
+            <input class="form-control form-control-sm" placeholder="mm/dd/yyyy" bsDatepicker #dp="bsDatepicker">
+        </div>
+
+
+        <!-- fecha hasta -->
+        <div class="fcha-hasta " class=" col-lg-3 " id="fech-hasta">
+            <mat-hint align="center">
+                <strong>Fecha Fin</strong>
+            </mat-hint>
+            <input class="form-control form-control-sm" placeholder="mm/dd/yyyy " bsDatepicker #dp="bsDatepicker">
+            <br>
+            <br>
+
+        </div>
+
+        <div class="botones">
+            <button id="btn-buscar" type="button" class="btn btn-sm  btn-warning ">
+                <i class="material-icons">search</i>Buscar</button>
+        </div>
+    </form>
+</mat-expansion-panel>
+</div>
+<br>
+
+<br>
+<div>
+<mat-expansion-panel id="expa" [expanded]="true" >
+    <mat-expansion-panel-header id="head-expa">
+            <i class="material-icons">equalizer</i>
+        <b>Estadisticas de las soluciones
+        </b>
+    </mat-expansion-panel-header>
+    
+    <form id="formulario">
+        <br>
+        <div class="table-responsive">
+            <table class="table table-hover  table-white  " id="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Fecha Primera</th>
+                        <th scope="col">Fecha Ultima</th>
+                        <th scope="col">Rut Ejecutivo</th>
+                        <th scope="col">Nombre ejecutivo</th>
+                        <th scope="col">N° Soluciones</th>
+                        <th scope="col">N° Clientes</th>
+                        <th scope="col">Edad promedio</th>
+                        <th scope="col">Capital Promedio (UF)</th>
+                        <th scope="col">Prima Promedio (UF)</th>
+                        <th scope="col">Prima Exe. Promedio (UF)</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+
+                </tbody>
+            </table>
+        </div>
+        
+        <br>    
+    </form>
+
+</mat-expansion-panel>
+</div>
+<div class="volver" >
+    <a [routerLink]="['home']"> <button id="btn-volver" type="submit" class="btn btn-sm  btn-warning ">
+            <span matTooltip="Ir a pantalla principal"><i class="material-icons">arrow_back</i></span>Volver</button></a>
+   </div>
+   <div class="exportar" >
+        <button id="btn-exportar" type="button" class="btn btn-sm  btn-warning ">
+                <span matTooltip="Exportar archivo excel"> <i class="material-icons">insert_drive_file</i>Exportar</span></button>
+    </div>
+<br>
+<br>
+</div>

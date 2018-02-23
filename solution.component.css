@@ -1,0 +1,123 @@
+#busqueda{
+    color: rgba(0, 0, 0, 0.459);
+    font-weight: bolder;
+    font-size: 150%; 
+    margin-left: 25px;  
+    font-family:  'Lucida Grande';
+
+}
+#titulo-tabla{
+    color: rgba(0, 0, 0, 0.459);
+    font-weight: bolder;
+    font-size: 150%; 
+    margin-left: 25px;
+    font-family:  'Lucida Grande';
+
+
+}
+
+#table{
+       
+    background-color:rgb(255, 255, 255);
+    color: #bbb;
+   
+
+}
+#expa {
+    color: #009fac;
+    font-weight: 700;
+ overflow: hidden;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 5px;
+    border-bottom:1.5px solid #ddd;
+    font-size: 14px;
+    text-justify: newspaper;
+   
+ 
+   
+}
+#formulario{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#home:hover{
+    color: orangered;
+    cursor: pointer;
+}
+#home{
+
+    margin-left: 35px;
+}
+
+#btn-limpiar{
+    font-weight: bolder;
+    padding: 0 6px;
+    margin-right: 14px; 
+    border-radius: 5px;
+    background-color: #f96b07!important;   
+    color: white;
+    border-bottom: 1px;
+    min-height: 32px;
+    min-width: 88px;
+
+
+}
+
+
+#btn-buscar{
+    font-weight: bolder;
+    vertical-align: middle;
+    padding: 0 6px;
+    border-radius: 5px;
+    background-color: #f96b07!important;   
+    color: white;
+    border-bottom: 1px;
+    min-height: 32px;
+    min-width: 88px;
+
+
+}
+#btn-buscar i{
+    vertical-align: middle;
+    font-size: 20px;
+}
+#btn-limpiar i{
+    vertical-align: middle;
+    font-size: 20px;
+}
+#leyenda{
+   
+    line-height:1.1; 
+    margin-left: 35px;
+    font-size: 13px;  
+    font-weight: 300;
+
+ }
+ #titulo{
+    
+    color:#434650;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 35px;
+}  
+
+#btn-volver{
+    font-weight: bolder;
+    margin-top: 21px;
+    margin-left: 35px;
+    padding: 0 6px;
+    border-radius: 5px;
+    background-color: #f96b07!important; 
+    color: white;
+    margin-bottom: 25px;
+    min-height: 32px;
+    min-width: 88px;
+       
+     }
+     #btn-volver i{
+    vertical-align: middle;
+    font-size: 20px;
+     }
+     

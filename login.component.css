@@ -1,0 +1,65 @@
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor:auto;
+}
+
+.card {
+    
+    top: 135px;
+    max-width: 400px;
+    background-color: rgb(#495057);
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+}
+
+
+.profile-img-card {
+  
+    width: 150px;
+    height: 45px;
+    margin: 0 auto 10px;
+    display: block;
+  
+}
+
+.btn{
+color: white;
+width: 100%;
+background-color: #f96b07 !important;   
+
+
+}
+.btn.btn:hover,
+.btn.btn:active,
+.btn.btn:focus {
+   
+}
+.forgot-password {
+     
+    color: rgb(61, 70, 73);
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus{
+    color: rgb(158, 187, 240);
+}
+.forgot-password{
+    
+    text-decoration-color: rgb(158, 187, 240);
+    text-align: end;
+
+}
+
+.profile-name-card{
+text-align: center;
+
+}
+#profile-name{
+color: #aaa;   
+}

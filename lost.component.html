@@ -1,0 +1,42 @@
+<title>Login</title>
+
+<div class="container">
+    <div class="card card-container">
+
+        <img id="profile-img" class="profile-img-card" src="http://portal.aach.cl/Contenido/Galeria/Cias/120.jpg" />
+        <h3 id="profile-name" class="profile-name-card" > Recuperar Clave</h3>
+        <hr>
+
+
+        <form class="form-signin">
+
+            <div class="form-group">
+                <!--email-->
+                <div class="input-group">
+
+                    <div class="input-group-addon">
+                        <i class="material-icons">perm_identity</i>
+                    </div>
+
+                    <input type="email" id="inputEmail" name="login" class="form-control" placeholder="Ej. portalpartner@pentavida.cl" required
+                        autofocus>
+                    <div class="invalid-feedback">
+                        Ingrese email valido
+                    </div>
+
+                </div>
+            </div>
+
+           
+            <a>
+                <button type="button" class="btn btn-warning">Recuperar clave</button>
+            </a>
+            <a [routerLink]="['']">
+            <button id="btn-volver" type="button" class="btn btn-warning">Volver</button>
+            </a>
+        </form>
+       
+    </div>
+    <!-- /card-container -->
+</div>
+<!-- /container -->

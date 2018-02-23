@@ -1,0 +1,82 @@
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor:auto;
+}
+
+.card {
+    
+    top: 135px;
+    max-width: 400px;
+    background-color: rgb(#495057);
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    box-shadow: #495057;
+}
+
+
+.profile-img-card {
+  
+    width: 150px;
+    height: 45px;
+    margin: 0 auto 10px;
+    display: block;
+  
+}
+
+.btn{
+    margin-top: 35px;
+    width: 100%;
+    background-color: #f96b07;
+    color: white;
+
+
+}
+
+.forgot-password {
+     
+    color: rgb(61, 70, 73);
+}
+
+
+
+.profile-name-card{
+    text-align: center;
+
+}
+
+#btn-volver:hover{
+    background-color: white;
+    color: #495057;
+}
+
+#btn-volver{ 
+    margin-top: 15px;  
+    background-color: #f96b07;   
+    color: white;
+
+}
+
+
+
+.btn:hover{
+  -webkit-animation: tiembla 0.1s infinite;
+  -webkit-animation-duration: 0.8s;
+}
+@-webkit-keyframes tiembla{
+	
+	50% { -webkit-transform:rotateZ( 0deg) scale(1.007); }
+
+
+}
+#profile-name{
+
+    
+color: #aaa;
+
+}
+        

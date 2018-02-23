@@ -1,0 +1,128 @@
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .tool{
+      background: white;
+      
+  }
+
+
+.side .navlist .item:hover{
+  background-color: rgb(110, 109, 108);
+  color: white;
+  font-style: bold;
+
+}
+  
+
+.side    {
+  background-color:#494c4b!important;
+ 
+  transition: width 0.2s;
+  height: 100%;
+
+ 
+
+}
+
+
+
+
+.side .navlist .item{
+ color: whitesmoke;
+  font-size: 12;
+
+}
+#mis-datos{
+background-color:#636363;
+
+}
+
+#mis-datos i{
+vertical-align: middle;
+  margin-right: 3px;
+}
+
+
+#mis-datos:hover{
+  -webkit-animation: tiembla 0.1s infinite;
+  -webkit-animation-duration: 0.8s;
+
+}
+
+@-webkit-keyframes tiembla{
+	
+	50% { -webkit-transform:rotateZ( 0deg) scale(0.98); }
+
+
+}
+#salir i:hover{
+  -webkit-animation: tiembla 0.1s infinite;
+  -webkit-animation-duration: 0.8s;
+ 
+}
+@-webkit-keyframes tiembla{
+	
+	50% { -webkit-transform:rotateZ( 0deg) scale(1.098); }
+
+
+}
+
+#key i:hover{
+  -webkit-animation: tiembla 0.1s infinite;
+  -webkit-animation-duration: 0.8s;
+}
+@-webkit-keyframes tiembla{
+	
+	50% { -webkit-transform:rotateZ( 0deg) scale(1.050); }
+
+
+}
+
+
+
+#mis-datos:hover{
+
+background-color:#636363;
+
+
+}
+#imagen{
+
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+
+}
+
+
+
+#icono i {
+letter-spacing: 20px;
+  text-align: center;
+}
+ 
+.sidenav-container{
+
+  height: 100%;
+}
+
+#key{
+  margin-top: 10px;
+  vertical-align: middle;
+}
+#salir{
+  margin-top: 10px;
+  vertical-align: middle;
+  
+
+}
+#menu{
+  margin-top: 10px;
+  vertical-align: middle;
+}
+#salir:hover{
+
+  background-color:rgb(255, 255, 255) !important;
+}

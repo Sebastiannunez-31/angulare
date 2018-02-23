@@ -1,0 +1,182 @@
+<br>
+<h3 id="titulo"> Mis Soluciones</h3>
+<p id="leyenda">Resumen de desempeño </p>
+<br>
+<br>
+
+ 
+<mat-expansion-panel id="expa" [expanded]="true">
+
+
+        <!-- header expansion panel -->
+        <mat-expansion-panel-header >
+            <i class="material-icons">find_replace</i>
+            <b>Opciones de busqueda</b>
+        </mat-expansion-panel-header>
+       
+    
+        <!-- contenido dentro del expansion panel -->
+        <form class="container-fluid ">
+    
+    
+            <div class="row">
+    
+    
+                <!-- rut asegurado -->
+                <div id="rut" class="col-lg-3 col-xs-12 col-12 col-md-5">
+                    <mat-hint align="center" class="hint">
+                        <strong>Rut Asegurado</strong>
+                    </mat-hint>
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="12345678-9">
+                    </div>
+    
+                </div>
+                <!--  -->
+    
+                <!-- nombre asegurado -->
+                <div class="col-lg-3 col-xs-12 col-12 col-md-5" id="nomb-ase">
+                    <mat-hint align="center" class="hint">
+                        <strong>Nombre Asegurado</strong>
+                    </mat-hint>
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Ej.juan Perez">
+                    </div>
+    
+                </div>
+                <!-- -->
+    
+                <!-- Nombre ejecutivo -->
+                <div class="col-lg-3 col-xs-12 col-12 col-md-5" id="nomb-eje">
+                    <mat-hint align="center" class="hint">
+                        <strong>Nombre Ejecutivo</strong>
+                    </mat-hint>
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="">
+                    </div>
+                </div>
+                <!--  -->
+    
+                <!-- numero de solucion -->
+                <div class="col-lg-3 col-xs-12 col-12 col-md-5" id="n-solu">
+                    <mat-hint align="center" class="hint">
+                        <strong>Número de Solución</strong>
+                    </mat-hint>
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Ej. 1100">
+                    </div>
+                </div>
+                <!-- -->
+    
+            </div>
+            <br>
+            <!-- segunda linea del expansion panel -->
+            <div class="row">
+                <!-- numero de propuesta -->
+                <div class="col-lg-3 col-xs-12 col-12 col-md-5" id="n-prop">
+                    <mat-hint align="center" class="hint" >
+                        <strong>Número Propuesta</strong>
+                    </mat-hint>
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Ej. 1234">
+                    </div>
+    
+                </div>
+    
+                <!-- estado solucion -->
+    
+                <div class="col-lg-3 col-xs-2 col-12 col-md-5 " id="estado-solu">
+                    <mat-hint align="center" class="hint">
+                        <strong>Estado Solucion</strong>
+                    </mat-hint>
+                    <select class="custom-select form-control-sm "    >
+                        <option selected > </option>
+                        <option value="1">Caducada</option>
+                        <option value="2">Desistida</option>
+                        <option value="4">Emitida</option>
+                        <option value="5">En contratación</option>
+                        <option value="6">En propuesta</option>
+                        <option value="7">En suscripción</option>
+                        <option value="8">En suscripción sin pago</option>
+                        <option value="9">Enviada al cliente</option>
+                        <option value="10">Finalizada</option>
+                        <option value="11">Ingresada</option>
+                        <option value="12">Rechaza</option>
+    
+                    </select>
+    
+                </div>
+                <!-- fecha desde -->
+    
+                <div  class=" col-lg-3 " >
+                    <mat-hint align="center" class="hint">
+                        <strong>Fecha Inicio</strong>
+                    </mat-hint>
+                    <input class="form-control form-control-sm" placeholder="mm/dd/yyyy" bsDatepicker #dp="bsDatepicker">
+                </div>
+    
+    
+                <!-- fecha hasta -->
+                <div class="fcha-hasta " class=" col-lg-3 " id="fech-hasta">
+                    <mat-hint align="center" class="hint">
+                        <strong>Fecha Fin</strong>
+                    </mat-hint>
+                    <input class="form-control form-control-sm" placeholder="mm/dd/yyyy " bsDatepicker #dp="bsDatepicker">
+                    <br>
+                    <br>
+    
+                </div>
+            </div>
+            <div class="botones" class="text-right">
+             <button id="btn-limpiar" type="reset" class="btn btn-sm btn-warning "><i class="material-icons">brush</i>Limpiar</button>
+            <button id="btn-buscar"   type="button" class="btn btn-sm  btn-warning "><i class="material-icons">search</i>Buscar</button>  
+        </div>    
+        </form>
+    </mat-expansion-panel>
+
+    
+    
+    
+    <mat-expansion-panel id="expa" [expanded]="true">
+        <mat-expansion-panel-header id="head-expa">
+            <i class="material-icons">view_list</i>
+            <b>Soluciones</b>
+        </mat-expansion-panel-header>
+        
+        <form id="formulario">
+            <br>
+            <div class="table-responsive">
+                <table class="table table-hover  table-white  " id="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Solucion</th>
+                            <th scope="col">Rut Asegurado</th>
+                            <th scope="col">Asegurado</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Ejecutivo</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Forma Pago</th>
+                            <th scope="col">Propuesta</th>
+                            <th scope="col">Estado Propuesta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+    
+    
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </mat-expansion-panel>
+    <div class="volver">
+            <a [routerLink]="['home']">
+                <button id="btn-volver" type="submit" class="btn btn-sm  btn-warning ">
+                    <span matTooltip="Ir a pantalla principal"><i class="material-icons">arrow_back</i></span>Volver</button>
+            </a>
+    
+    <footer class="container-fluid">
+        ..
+    
+    
+    </footer>
